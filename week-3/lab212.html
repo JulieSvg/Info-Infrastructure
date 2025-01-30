@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab 2 week 3</title>
+  </head>
+  <body>
+    <form
+      action="https://wp.zybooks.com/form-viewer.php"
+      method="post"
+      enctype="multipart/form-data"
+    >
+      <fieldset>
+        <legend>Status:</legend>
+        <input type="radio" name="status" id="Draft" value="Draft" />
+        <label for="Draft">Draft</label>
+        <input type="radio" name="status" id="Final" value="Final" checked />
+        <label for="Final">Final</label>
+      </fieldset>
+      <div>
+        <label for="gameDate">Dates:</label>
+        <select name="gameDate" id="gameDate">
+          <option value="March 20">March 20</option>
+          <option value="March 24">March 24</option>
+          <option value="April 2">April 2</option>
+          <option value="April 6">April 6</option>
+          <option value="April 13">April 13</option>
+        </select>
+      </div>
+      <fieldset>
+        <legend>Players:</legend>
+        <div>
+          <input
+            type="checkbox"
+            name="player"
+            id="AaravAgarwal"
+            value="Aarav Agarwal"
+          />
+          <label for="AaravAgarwal">Aarav Agarwal</label>
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            name="player"
+            id="AvaJohnson"
+            value="Ava Johnson"
+          />
+          <label for="AvaJohnson">Ava Johnson</label>
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            name="player"
+            id="JulioOrtiz"
+            value="Julio Ortiz"
+          />
+          <label for="JulioOrtiz">Julio Ortiz</label>
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            name="player"
+            id="LiamRubio"
+            value="Liam Rubio"
+          />
+          <label for="LiamRubio"> Liam Rubio</label>
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            name="player"
+            id="EmmaWitherspoon"
+            value="Emma Witherspoon"
+          />
+          <label for="EmmaWitherspoon"> Emma Witherspoon</label>
+        </div>
+      </fieldset>
+      <input type="submit" value="submit" />
+    </form>
+  </body>
+</html>
