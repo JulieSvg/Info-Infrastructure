@@ -13,4 +13,4 @@ I use a lot of things we learned.
 
 ### Live Link
 
-[Blog Page](https://{username}.github.io/{reponame}/homework-2)
+[Blog Page](https://juliesvg.github.io/Info-Infrastructure/homework-2/)
