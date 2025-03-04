@@ -14,8 +14,6 @@
 
 ### Create For Loop
 
-- type For and choose For Loop to get this
-  for (let i = 0; i < instruments.length; i++) {
-  const instru = instruments[i];
-  ulRef.innerHTML += "<li>" + instru + "</li>";
-  }
+type For and choose For Loop to get this:
+
+- for (let i = 0; i < instruments.length; i++) { const instru = instruments[i]; ulRef.innerHTML += "<li>" + instru + "</li>";}
