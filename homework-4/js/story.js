@@ -67,7 +67,7 @@ function goRight() {
 }
 
 function confirmFire() {
-    let confirmChoice = confirm("You want to start a fire, right?");
+    const confirmChoice = confirm("You want to start a fire, right?");
 
     if (confirmChoice) {
         startFire();
