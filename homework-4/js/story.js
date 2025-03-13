@@ -3,6 +3,7 @@ let wetClothes = false;
 const storyRef = document.querySelector("#story");
 const choicesRef = document.querySelector("#choices"); 
 
+
 function startAdventure() {
     storyRef.innerHTML = "<p>Today, you have decided to go on a hike. After about 30 minutes of hiking, you come across a river. What do you do?</p>";
 
@@ -56,17 +57,30 @@ function goRight() {
         storyRef.innerHTML = "<p>It's too cold, and your clothes aren’t drying. As the night falls, you seek shelter under a tree, trying to escape the biting wind. You need to decide if you want to light a fire to get warmer or endure the night in the cold?</p>";
         choicesRef.innerHTML = "";
 
-        addChoice("Start a fire", startFire);
+        addChoice("Start a fire", confirmFire);
         addChoice("Stay in the dark", stayDark);
-    } else {
+    }    
+    else {
         storyRef.innerHTML = "<p> Despite the cold, you continue to walk, your steady pace is keeping you warm. An hour later, you see your car. You made it!</p>";
         choicesRef.innerHTML = "";
     }
 }
 
+function confirmFire() {
+    let confirmChoice = confirm("You want to start a fire, right?");
+
+    if (confirmChoice) {
+        startFire();
+    } else {
+        stayDark();
+    }
+
+}
+
 function startFire() {
     storyRef.innerHTML = "<p>You start a fire to stay warm, but the bushes catch fire! The flames spread too fast, the whole forest start burning, and you are trapped. There is nowhere to go, you die.</p>";
     choicesRef.innerHTML = "";
+    
 }
 
 function stayDark() {
@@ -76,6 +90,7 @@ function stayDark() {
     addChoice("Stay still", stayWithWolf);
     addChoice("Run", runAway);
 }
+
 
 function stayWithWolf() {
     storyRef.innerHTML = "<p>The wolf comes close and curls up beside you, keeping you warm. In the morning, you wake up the wolf is gone and you decide to keep walking, after an hour you finally made your way back to your car. You survived!</p>";
