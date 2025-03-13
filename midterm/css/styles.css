@@ -121,3 +121,10 @@ button a {
   padding-top: 20px;
   font-weight: bold;
 }
+
+#catalog {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: left;
+  text-align: center;
+}
