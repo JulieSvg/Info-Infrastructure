@@ -45,10 +45,12 @@ Data Structure:
 
 Each tribe will be stored as an object with attributes like:
 
-<pre> {
+<pre>{
   "name": "Navajo",
   "region": "Southwest",
-  "artStyles": ["Weaving", "Sand Painting", "Jewelry"]
-} </pre>
+  "artStyles": ["Weaving", "Sand Painting", "Jewelry"],
+  "location": { "x": 220, "y": 330 },
+  "description": "Known for their intricate weavings and silver jewelry..."
+}</pre>
 
 This structure allows the data to be easily used for both displaying on the map and checking answers in the game.
