@@ -41,16 +41,10 @@ Color Palette:
 - Soft blues and beiges for backgrounds to keep it calm and readable.
 - Highlight colors (like golden yellow) for interactive elements and hover effects.
 
-ata Structure:
+Data Structure:
 
 Each tribe will be stored as an object with attributes like:
 
-{
-"name": "Navajo",
-"region": "Southwest",
-"artStyles": ["Weaving", "Sand Painting", "Jewelry"],
-"location": { "x": 220, "y": 330 },
-"description": "Known for their intricate weavings and silver jewelry..."
-}
+<pre> ```json { "name": "Navajo", "region": "Southwest", "artStyles": ["Weaving", "Sand Painting", "Jewelry"] } ``` </pre>
 
 This structure allows the data to be easily used for both displaying on the map and checking answers in the game.
